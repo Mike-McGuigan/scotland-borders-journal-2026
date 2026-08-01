@@ -59,10 +59,10 @@ window.tripData = {
       chapter: "Wednesday",
       title: "Torchlight by Candle",
       date: "Wednesday evening",
-      place: "Coldstream Park to the Tweed",
-      tags: ["torchlight", "fireworks", "Tweed"],
+      place: "Top gates of Home Park to Tweed Green",
+      tags: ["torchlight", "fireworks", "Tweed Green"],
       narrative:
-        "The torchlight parade begins in the park with real candles, winds around the town, and ends beside the Tweed for fireworks. It should feel fragile, human, and old-fashioned in the best possible way."
+        "The torchlight procession begins at the top gates of Home Park with real candles, winds around the town, and ends at Tweed Green for the firework display. It should feel fragile, human, and old-fashioned in the best possible way."
     },
     {
       chapter: "Thursday",
@@ -127,18 +127,18 @@ window.tripData = {
     {
       date: "Wednesday",
       time: "Evening",
-      place: "Coldstream Park and the Tweed",
-      title: "Torchlight Parade",
+      place: "Top gates of Home Park to Tweed Green",
+      title: "Torchlight Procession",
       people: ["Mike", "Sharon", "Ellis", "Murray", "Patrick"],
       quickNotes:
-        "Candle torchlight parade starts in the park, winds around town, ends by the Tweed for fireworks.",
+        "Candle torchlight procession starts at the top gates of Home Park, winds around town, and ends at Tweed Green for fireworks.",
       narrative:
-        "The torchlight parade starts in the park with real candles, not electric substitutes, which gives the whole evening a softer and more human feel. From there it winds around Coldstream and gathers by the Tweed, where the night ends in fireworks over the river.",
+        "The torchlight procession starts at the top gates of Home Park with real candles, not electric substitutes, which gives the whole evening a softer and more human feel. From there it winds around Coldstream and gathers at Tweed Green, where the night ends with a firework display by the river.",
       media: [
         {
           type: "photo",
           src: "assets/photos/wednesday-torchlight-placeholder.jpg",
-          caption: "Add a candlelit parade photo here."
+          caption: "Add a candlelit procession photo here."
         }
       ]
     },

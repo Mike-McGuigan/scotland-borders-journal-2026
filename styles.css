@@ -7,6 +7,15 @@
   --river: #406b75;
   --thistle: #66506d;
   --ember: #a34f32;
+  --douglas-green: #0f3f31;
+  --douglas-navy: #11182b;
+  --douglas-blue: #1647a8;
+  --douglas-white: #f4f0e6;
+  --douglas-tartan:
+    linear-gradient(90deg, transparent 0 22%, rgba(244, 240, 230, 0.92) 22% 24%, transparent 24% 62%, rgba(22, 71, 168, 0.82) 62% 65%, transparent 65% 100%),
+    linear-gradient(0deg, transparent 0 34%, rgba(244, 240, 230, 0.82) 34% 36%, transparent 36% 70%, rgba(22, 71, 168, 0.72) 70% 73%, transparent 73% 100%),
+    repeating-linear-gradient(90deg, rgba(15, 63, 49, 0.95) 0 32px, rgba(17, 24, 43, 0.96) 32px 64px),
+    repeating-linear-gradient(0deg, rgba(15, 63, 49, 0.55) 0 32px, rgba(17, 24, 43, 0.68) 32px 64px);
   --line: rgba(23, 33, 28, 0.16);
   --shadow: 0 24px 60px rgba(28, 34, 29, 0.14);
 }
@@ -53,8 +62,11 @@ button:disabled {
 
 .button.primary,
 button.active {
-  background: var(--ink);
+  background: var(--douglas-tartan);
+  background-size: 76px 76px;
   color: var(--paper);
+  border-color: rgba(244, 240, 230, 0.28);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.46);
 }
 
 .site-header {
@@ -176,7 +188,11 @@ button.active {
   align-items: start;
   padding: 12px;
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.7);
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.74)),
+    var(--douglas-tartan);
+  background-size: auto, 70px 70px;
+  border: 1px solid rgba(15, 63, 49, 0.18);
 }
 
 .person-card p {
@@ -359,11 +375,14 @@ button.active {
 }
 
 .tag-row span {
-  border: 1px solid var(--line);
+  border: 1px solid rgba(244, 240, 230, 0.36);
   border-radius: 999px;
   padding: 6px 10px;
-  background: rgba(235, 228, 213, 0.56);
+  background: var(--douglas-tartan);
+  background-size: 64px 64px;
+  color: var(--douglas-white);
   font: 700 0.78rem Arial, sans-serif;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.48);
 }
 
 .replay-controls {
@@ -412,7 +431,10 @@ button.active {
 
 .entry-date {
   padding: 24px;
-  background: var(--ink);
+  background:
+    linear-gradient(rgba(12, 20, 18, 0.34), rgba(12, 20, 18, 0.34)),
+    var(--douglas-tartan);
+  background-size: auto, 86px 86px;
   color: white;
 }
 
@@ -495,8 +517,9 @@ summary {
   margin-top: 16px;
   padding: 10px;
   border-radius: 6px;
-  background: #f4efe3;
-  color: var(--river);
+  background: var(--douglas-tartan);
+  background-size: 70px 70px;
+  color: var(--douglas-white);
   overflow-wrap: anywhere;
 }
 
