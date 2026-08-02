@@ -3,6 +3,7 @@ const { people, replay, diaryEntries, mediaPlan } = window.tripData;
 const peopleGrid = document.querySelector("#people-grid");
 const diaryList = document.querySelector("#diary-list");
 const filters = document.querySelector("#filters");
+const tagFilters = document.querySelector("#tag-filters");
 const mediaGrid = document.querySelector("#media-grid");
 const replayKicker = document.querySelector("#replay-kicker");
 const replayTitle = document.querySelector("#replay-title");
@@ -14,6 +15,7 @@ const prevStep = document.querySelector("#prev-step");
 const nextStep = document.querySelector("#next-step");
 
 let selectedPerson = "All";
+let selectedTag = "All";
 let replayIndex = 0;
 
 function renderPeople() {
@@ -53,16 +55,44 @@ function renderFilters() {
   });
 }
 
-function renderDiary() {
-  const entries =
-    selectedPerson === "All"
-      ? diaryEntries
-      : diaryEntries.filter((entry) => entry.people.includes(selectedPerson));
+function renderTagFilters() {
+  const tags = [
+    "All",
+    ...new Set(diaryEntries.flatMap((entry) => entry.tags || []))
+  ];
 
-  diaryList.innerHTML = entries
+  tagFilters.innerHTML = tags
     .map(
-      (entry) => `
-        <article class="diary-entry">
+      (tag) => `
+        <button class="${tag === selectedTag ? "active" : ""}" type="button" data-tag="${tag}">
+          ${tag}
+        </button>
+      `
+    )
+    .join("");
+
+  tagFilters.querySelectorAll("button").forEach((button) => {
+    button.addEventListener("click", () => {
+      selectedTag = button.dataset.tag;
+      renderTagFilters();
+      renderDiary();
+    });
+  });
+}
+
+function renderDiary() {
+  const entries = diaryEntries.filter((entry) => {
+    const personMatch =
+      selectedPerson === "All" || entry.people.includes(selectedPerson);
+    const tagMatch = selectedTag === "All" || (entry.tags || []).includes(selectedTag);
+    return personMatch && tagMatch;
+  });
+
+  diaryList.innerHTML = entries.length
+    ? entries
+        .map(
+          (entry) => `
+        <article class="diary-entry ${entry.activity ? "has-activity" : ""}">
           <div class="entry-date">
             <span>${entry.date}</span>
             <small>${entry.time || "Memory note"}</small>
@@ -71,19 +101,55 @@ function renderDiary() {
             <p class="eyebrow">${entry.place}</p>
             <h3>${entry.title}</h3>
             <p>${entry.narrative}</p>
+            ${renderActivity(entry.activity)}
             <details>
               <summary>Quick note</summary>
               <p>${entry.quickNotes}</p>
             </details>
-            <div class="tag-row">
+            <div class="tag-row people-tags">
               ${entry.people.map((name) => `<span>${name}</span>`).join("")}
+            </div>
+            <div class="tag-row entry-tags">
+              ${(entry.tags || []).map((tag) => `<span>${tag}</span>`).join("")}
             </div>
             ${renderEntryMedia(entry.media)}
           </div>
         </article>
       `
-    )
-    .join("");
+        )
+        .join("")
+    : `<p class="empty-state">No diary items match those filters yet.</p>`;
+}
+
+function renderActivity(activity) {
+  if (!activity) {
+    return "";
+  }
+
+  return `
+    <dl class="activity-summary">
+      <div>
+        <dt>Type</dt>
+        <dd>${activity.type}</dd>
+      </div>
+      <div>
+        <dt>Distance</dt>
+        <dd>${activity.distanceKm} km</dd>
+      </div>
+      <div>
+        <dt>Duration</dt>
+        <dd>${activity.duration}</dd>
+      </div>
+      <div>
+        <dt>Climb</dt>
+        <dd>${activity.elevationGainM} m</dd>
+      </div>
+      <div>
+        <dt>Source</dt>
+        <dd><a href="${activity.file}">${activity.source}</a></dd>
+      </div>
+    </dl>
+  `;
 }
 
 function renderEntryMedia(media) {
@@ -93,17 +159,35 @@ function renderEntryMedia(media) {
 
   return `
     <div class="entry-media">
-      ${media
-        .map(
-          (item) => `
-            <div class="media-placeholder">
-              <span>${item.type}</span>
-              <strong>${item.caption}</strong>
-              <small>${item.src}</small>
-            </div>
-          `
-        )
-        .join("")}
+      ${media.map((item) => renderMediaItem(item)).join("")}
+    </div>
+  `;
+}
+
+function renderMediaItem(item) {
+  if (item.type === "photo") {
+    return `
+      <figure class="media-item photo-item">
+        <img src="${item.src}" alt="${item.caption}" loading="lazy">
+        <figcaption>${item.caption}</figcaption>
+      </figure>
+    `;
+  }
+
+  if (item.type === "video") {
+    return `
+      <figure class="media-item video-item">
+        <video src="${item.src}" controls preload="metadata"></video>
+        <figcaption>${item.caption}</figcaption>
+      </figure>
+    `;
+  }
+
+  return `
+    <div class="media-placeholder">
+      <span>${item.type}</span>
+      <strong>${item.caption}</strong>
+      <small>${item.src}</small>
     </div>
   `;
 }
@@ -147,6 +231,7 @@ nextStep.addEventListener("click", () => {
 
 renderPeople();
 renderFilters();
+renderTagFilters();
 renderDiary();
 renderReplay();
 renderMediaPlan();

@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   --ink: #17211c;
   --muted: #5f6b62;
   --paper: #f8f5ee;
@@ -421,6 +421,71 @@ button.active {
   display: grid;
   gap: 18px;
 }
+.filter-group {
+  margin-bottom: 18px;
+}
+
+.filter-label {
+  margin: 0 0 8px;
+  color: var(--river);
+  font: 800 0.72rem Arial, sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.entry-tags {
+  margin-top: 10px;
+}
+
+.entry-tags span {
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.72)),
+    var(--douglas-tartan);
+  background-size: auto, 64px 64px;
+  color: var(--ink);
+  border-color: rgba(15, 63, 49, 0.2);
+  text-shadow: none;
+}
+
+.activity-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(112px, 1fr));
+  gap: 10px;
+  margin: 18px 0 0;
+  padding: 14px;
+  border-radius: 8px;
+  background: #fbfaf6;
+  border: 1px solid var(--line);
+}
+
+.activity-summary div {
+  min-width: 0;
+}
+
+.activity-summary dt {
+  color: var(--river);
+  font: 800 0.68rem Arial, sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.activity-summary dd {
+  margin: 4px 0 0;
+  color: var(--ink);
+  font: 800 0.92rem Arial, sans-serif;
+}
+
+.activity-summary a {
+  color: var(--ember);
+}
+
+.empty-state {
+  padding: 24px;
+  border-radius: 8px;
+  background: white;
+  border: 1px solid var(--line);
+  color: var(--muted);
+}
 
 .diary-entry {
   display: grid;
@@ -478,6 +543,30 @@ summary {
   margin-top: 18px;
 }
 
+
+.media-item {
+  margin: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #fbfaf6;
+  border: 1px solid var(--line);
+}
+
+.media-item img,
+.media-item video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background: var(--soft);
+}
+
+.media-item figcaption {
+  padding: 10px 12px;
+  color: var(--muted);
+  font: 700 0.78rem Arial, sans-serif;
+  line-height: 1.35;
+}
 .media-placeholder {
   min-height: 130px;
   display: flex;
@@ -592,3 +681,5 @@ summary {
     font-size: 0.68rem;
   }
 }
+
+

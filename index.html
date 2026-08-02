@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -19,6 +19,7 @@
           <a href="#civic-week">Civic Week</a>
           <a href="#replay">Replay</a>
           <a href="#diary">Diary</a>
+          <a href="#activities">Activities</a>
           <a href="#media">Media</a>
         </div>
       </nav>
@@ -167,7 +168,14 @@
           <p class="eyebrow">Day by day</p>
           <h2>Diary</h2>
         </div>
-        <div id="filters" class="filters" aria-label="Filter diary by person"></div>
+        <div class="filter-group">
+          <p class="filter-label">People</p>
+          <div id="filters" class="filters" aria-label="Filter diary by person"></div>
+        </div>
+        <div id="activities" class="filter-group">
+          <p class="filter-label">Tags</p>
+          <div id="tag-filters" class="filters" aria-label="Filter diary by tag"></div>
+        </div>
         <div id="diary-list" class="diary-list"></div>
       </section>
 
@@ -188,3 +196,5 @@
     <script src="app.js"></script>
   </body>
 </html>
+
+

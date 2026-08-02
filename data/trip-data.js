@@ -118,6 +118,7 @@ window.tripData = {
       place: "Family backstory",
       title: "The Places Already Waiting",
       people: ["Mike", "Sharon", "Ellis", "Murray", "Patrick"],
+      tags: ["memory", "family history"],
       quickNotes:
         "Sharon born in Coldstream Cottage Hospital. Family visits to Coldstream, Kelso, Civic Week, Blakelaw Farm, Jock and Jocelyn.",
       narrative:
@@ -125,11 +126,136 @@ window.tripData = {
       media: []
     },
     {
+      date: "Sunday 2 August 2026",
+      time: "08:46-08:47 BST",
+      place: "The Threshing Mill Cottage",
+      title: "Patrick Gets His Balls",
+      people: ["Ellis", "Murray", "Patrick"],
+      tags: ["moment", "Patrick", "pre-walk", "Ellis and Murray"],
+      quickNotes:
+        "Patrick receiving balls from Ellis and Murray just before the morning walk.",
+      narrative:
+        "Before the morning walk had properly begun, Patrick had his own important ceremony: receiving his balls from Ellis and Murray. It is the kind of small, funny, affectionate moment that belongs in the journal because it says as much about the day as any view across the fields.",
+      media: [
+        {
+          type: "photo",
+          src: "assets/photos/moments/patrick-balls/img_0938.jpeg",
+          caption: "Patrick sitting proudly with one of his new balls, taken at 08:46."
+        },
+        {
+          type: "photo",
+          src: "assets/photos/moments/patrick-balls/img_0941.jpeg",
+          caption: "Patrick getting stuck into the important pre-walk business, taken at 08:47."
+        },
+        {
+          type: "video",
+          src: "assets/videos/moments/patrick-balls/img_0942.mp4",
+          caption: "Patrick receiving his balls from Ellis and Murray."
+        }
+      ]
+    },
+    {
+      date: "Sunday 2 August 2026",
+      time: "08:51-09:37 BST",
+      place: "Borders countryside",
+      title: "Morning Walk",
+      people: ["Ellis", "Murray", "Patrick", "Mike"],
+      tags: ["activity", "walk", "route"],
+      quickNotes:
+        "GPX import. 2.19 km in 46m 54s, with around 26 m of ascent and descent.",
+      narrative:
+        "A gentle morning loop to prove the activity log idea: not a full route-planning tool, just a way of letting walked, ridden, or driven moments sit naturally alongside the diary. Later, entries like this can show the route, photos, timing, and whatever small memory belongs to that bit of the day.",
+      activity: {
+        type: "Walk",
+        source: "GPX",
+        file: "assets/routes/morning-walk.gpx",
+        distanceKm: 2.19,
+        duration: "46m 54s",
+        elevationGainM: 26,
+        startTime: "2026-08-02T07:51:02Z",
+        endTime: "2026-08-02T08:37:56Z",
+        points: 2627
+      },
+      media: [
+        {
+          type: "photo",
+          src: "assets/photos/activities/morning-walk/img_0944.jpeg",
+          caption: "Fields and morning sky at the start of the walk, taken at 08:56."
+        },
+        {
+          type: "photo",
+          src: "assets/photos/activities/morning-walk/img_0946.jpeg",
+          caption: "Patrick leading the way along the field track, taken at 08:56."
+        },
+        {
+          type: "photo",
+          src: "assets/photos/activities/morning-walk/img_0951.jpeg",
+          caption: "Patrick heading back along the grassy path, taken at 09:13."
+        },
+        {
+          type: "photo",
+          src: "assets/photos/activities/morning-walk/img_0953.jpeg",
+          caption: "A happy Patrick close-up near the end of the walk, taken at 09:16."
+        }
+      ]
+    },
+    {
+      date: "Sunday 2 August 2026",
+      time: "18:42-19:14 BST",
+      place: "Borders countryside",
+      title: "Evening Walk",
+      people: ["Ellis", "Murray", "Sharon", "Patrick"],
+      tags: ["activity", "walk", "route"],
+      quickNotes:
+        "GPX import. 2.08 km in 32m 23s, with around 27 m of ascent and 25 m of descent.",
+      narrative:
+        "An evening loop over familiar ground, with the fields softened by later light and heavier skies. Like the morning walk, this sits in the journal as a simple activity record: a route, a few selected photos, and just enough detail to remember the shape of that part of the day.",
+      activity: {
+        type: "Walk",
+        source: "GPX",
+        file: "assets/routes/evening-walk.gpx",
+        distanceKm: 2.08,
+        duration: "32m 23s",
+        elevationGainM: 27,
+        startTime: "2026-08-02T17:42:13Z",
+        endTime: "2026-08-02T18:14:36Z",
+        points: 1923
+      },
+      media: [
+        {
+          type: "photo",
+          src: "assets/photos/activities/evening-walk/img_0973.jpeg",
+          caption: "The lane opening out towards the evening fields, taken at 18:44."
+        },
+        {
+          type: "photo",
+          src: "assets/photos/activities/evening-walk/img_0977.jpeg",
+          caption: "Wheat fields under a soft evening sky, taken at 18:48."
+        },
+        {
+          type: "photo",
+          src: "assets/photos/activities/evening-walk/img_0979.jpeg",
+          caption: "The field track stretching ahead, taken at 18:58."
+        },
+        {
+          type: "photo",
+          src: "assets/photos/activities/evening-walk/img_0981.jpeg",
+          caption: "Low evening clouds over the Borders fields, taken at 18:58."
+        },
+        {
+          type: "photo",
+          src: "assets/photos/activities/evening-walk/img_0983.jpeg",
+          caption: "A final sweep of field and sky from the evening walk, taken at 18:58."
+        }
+      ]
+    },
+    {
       date: "Wednesday",
       time: "Evening",
       place: "Top gates of Home Park to Tweed Green",
       title: "Torchlight Procession",
       people: ["Mike", "Sharon", "Ellis", "Murray", "Patrick"],
+      tags: ["activity", "event", "torchlight", "fireworks"],
       quickNotes:
         "Candle torchlight procession starts at the top gates of Home Park, winds around town, and ends at Tweed Green for fireworks.",
       narrative:
@@ -148,6 +274,7 @@ window.tripData = {
       place: "Coldstream High Street",
       title: "Band, Guards, and Horses",
       people: ["Mike", "Sharon", "Ellis", "Murray", "Patrick"],
+      tags: ["activity", "event", "Coldstream Guards", "band", "horses"],
       quickNotes:
         "Watch the band, Coldstream Guards, and riders pass from the west through Coldstream High Street.",
       narrative:
@@ -171,6 +298,7 @@ window.tripData = {
       place: "Coldstream Bridge",
       title: "Over the Tweed",
       people: ["Mike", "Sharon", "Ellis", "Murray", "Patrick"],
+      tags: ["activity", "route", "Tweed", "Flodden Ride"],
       quickNotes:
         "Riders head over the bridge into England before the Flodden sequence.",
       narrative:
@@ -189,6 +317,7 @@ window.tripData = {
       place: "Farm field near Branxton",
       title: "Packed Lunches on the Hill",
       people: ["Mike", "Sharon", "Ellis", "Murray", "Patrick"],
+      tags: ["activity", "food", "waiting", "Sandersons Bakery"],
       quickNotes:
         "Drive through the farm yard, park in the field, eat packed lunches from Sandersons Bakery, wait for the riders.",
       narrative:
@@ -207,6 +336,7 @@ window.tripData = {
       place: "Flodden Memorial and Branxton Hill",
       title: "Wreaths, Remembrance, and the Charge",
       people: ["Mike", "Sharon", "Ellis", "Murray", "Patrick"],
+      tags: ["activity", "event", "remembrance", "Flodden", "horses"],
       quickNotes:
         "Riders go to Flodden Memorial first, lay wreaths, then charge up the hill track at Branxton.",
       narrative:
@@ -260,3 +390,4 @@ window.tripData = {
     }
   ]
 };
+
