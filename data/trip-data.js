@@ -56,6 +56,45 @@ window.tripData = {
         "Across the week, the ride-outs give the town its rhythm: horses, roads, people gathering, and the sense that Coldstream is briefly arranging itself around older traditions."
     },
     {
+      date: "Monday 3 August 2026",
+      time: "Lunch",
+      place: "The Black Bull, Etal",
+      title: "Lunch at The Black Bull",
+      people: ["Mike", "Sharon", "Ellis", "Murray", "Patrick"],
+      tags: ["food", "Etal", "Black Bull"],
+      quickNotes:
+        "Lunch at The Black Bull in Etal: Ellis had gammon steak, Murray had fish and chips, Sharon had salmon, Mike had a burger, and Patrick had sausage, mash, and veg.",
+      narrative:
+        "Lunch was at The Black Bull in Etal, a proper Borders pause between the morning in Coldstream and the afternoon out towards the castle ruins. Around the table it became its own little roll-call: Ellis with gammon steak, Murray with fish and chips, Sharon with salmon, Mike with a burger, and Patrick very much included with sausage, mash, and veg.",
+      media: [
+        {
+          type: "photo",
+          src: "assets/photos/monday/black-bull-lunch/ellis-gammon-steak.jpeg",
+          caption: "Ellis: gammon steak at The Black Bull."
+        },
+        {
+          type: "photo",
+          src: "assets/photos/monday/black-bull-lunch/murray-fish-and-chips.jpeg",
+          caption: "Murray: fish and chips at The Black Bull."
+        },
+        {
+          type: "photo",
+          src: "assets/photos/monday/black-bull-lunch/sharon-salmon.jpeg",
+          caption: "Sharon: salmon at The Black Bull."
+        },
+        {
+          type: "photo",
+          src: "assets/photos/monday/black-bull-lunch/mike-burger.jpeg",
+          caption: "Mike: burger at The Black Bull."
+        },
+        {
+          type: "photo",
+          src: "assets/photos/monday/black-bull-lunch/patrick-sausage-mash-veg.jpeg",
+          caption: "Patrick: sausage, mash, and veg at The Black Bull."
+        }
+      ]
+    },
+    {
       chapter: "Wednesday",
       title: "Torchlight by Candle",
       date: "Wednesday evening",
@@ -127,35 +166,6 @@ window.tripData = {
     },
     {
       date: "Sunday 2 August 2026",
-      time: "08:46-08:47 BST",
-      place: "The Threshing Mill Cottage",
-      title: "Patrick Gets His Balls",
-      people: ["Ellis", "Murray", "Patrick"],
-      tags: ["moment", "Patrick", "pre-walk", "Ellis and Murray"],
-      quickNotes:
-        "Patrick receiving balls from Ellis and Murray just before the morning walk.",
-      narrative:
-        "Before the morning walk had properly begun, Patrick had his own important ceremony: receiving his balls from Ellis and Murray. It is the kind of small, funny, affectionate moment that belongs in the journal because it says as much about the day as any view across the fields.",
-      media: [
-        {
-          type: "photo",
-          src: "assets/photos/moments/patrick-balls/img_0938.jpeg",
-          caption: "Patrick sitting proudly with one of his new balls, taken at 08:46."
-        },
-        {
-          type: "photo",
-          src: "assets/photos/moments/patrick-balls/img_0941.jpeg",
-          caption: "Patrick getting stuck into the important pre-walk business, taken at 08:47."
-        },
-        {
-          type: "video",
-          src: "assets/videos/moments/patrick-balls/img_0942.mp4",
-          caption: "Patrick receiving his balls from Ellis and Murray."
-        }
-      ]
-    },
-    {
-      date: "Sunday 2 August 2026",
       time: "08:51-09:37 BST",
       place: "Borders countryside",
       title: "Morning Walk",
@@ -196,6 +206,51 @@ window.tripData = {
           type: "photo",
           src: "assets/photos/activities/morning-walk/img_0953.jpeg",
           caption: "A happy Patrick close-up near the end of the walk, taken at 09:16."
+        }
+      ]
+    },
+    {
+      date: "Sunday 2 August 2026",
+      time: "08:51-09:37 BST",
+      place: "Borders countryside",
+      title: "Morning Walk",
+      people: ["Ellis", "Murray", "Patrick", "Mike"],
+      tags: ["activity", "walk", "route"],
+      quickNotes:
+        "GPX import. 2.19 km in 46m 54s, with around 26 m of ascent and descent.",
+      narrative:
+        "A gentle morning loop to prove the activity log idea: not a full route-planning tool, just a way of letting walked, ridden, or driven moments sit naturally alongside the diary. Later, entries like this can show the route, photos, timing, and whatever small memory belongs to that bit of the day.",
+      activity: {
+        type: "Walk",
+        source: "GPX",
+        file: "assets/routes/morning-walk.gpx",
+        distanceKm: 2.19,
+        duration: "46m 54s",
+        elevationGainM: 26,
+        startTime: "2026-08-02T07:51:02Z",
+        endTime: "2026-08-02T08:37:56Z",
+        points: 2627
+      },
+      media: [
+        {
+          type: "photo",
+          src: "assets/photos/monday/morning-walk/murray-and-patrick-field-track.jpeg",
+          caption: "Murray and Patrick setting off along the field track."
+        },
+        {
+          type: "photo",
+          src: "assets/photos/monday/morning-walk/morning-track-and-fields.jpeg",
+          caption: "The morning track through the Borders fields."
+        },
+        {
+          type: "photo",
+          src: "assets/photos/monday/morning-walk/murray-and-patrick-ball.jpeg",
+          caption: "Murray and Patrick with the ball on the morning walk."
+        },
+        {
+          type: "photo",
+          src: "assets/photos/monday/morning-walk/patrick-and-murray-walking.jpeg",
+          caption: "Patrick and Murray walking back along the track."
         }
       ]
     },
@@ -246,6 +301,202 @@ window.tripData = {
           type: "photo",
           src: "assets/photos/activities/evening-walk/img_0983.jpeg",
           caption: "A final sweep of field and sky from the evening walk, taken at 18:58."
+        }
+      ]
+    },
+    {
+      date: "Monday 3 August 2026",
+      time: "Morning",
+      place: "Borders countryside",
+      title: "Morning Walk",
+      people: ["Ellis", "Murray", "Patrick"],
+      tags: ["activity", "walk", "Patrick"],
+      quickNotes:
+        "Ellis, Murray, and Patrick went for a morning walk before the rest of the day unfolded.",
+      narrative:
+        "The day began with Ellis, Murray, and Patrick heading out for a morning walk. It feels like one of those easy holiday starts: no ceremony, no agenda, just the three of them stepping into the day before Coldstream, Etal, and the ride-out gathered around everyone later on.",
+      media: [
+        {
+          type: "photo",
+          src: "assets/photos/monday/morning-walk/murray-and-patrick-field-track.jpeg",
+          caption: "Murray and Patrick setting off along the field track."
+        },
+        {
+          type: "photo",
+          src: "assets/photos/monday/morning-walk/morning-track-and-fields.jpeg",
+          caption: "The morning track through the Borders fields."
+        },
+        {
+          type: "photo",
+          src: "assets/photos/monday/morning-walk/murray-and-patrick-ball.jpeg",
+          caption: "Murray and Patrick with the ball on the morning walk."
+        },
+        {
+          type: "photo",
+          src: "assets/photos/monday/morning-walk/patrick-and-murray-walking.jpeg",
+          caption: "Patrick and Murray walking back along the track."
+        }
+      ]
+    },
+    {
+      date: "Monday 3 August 2026",
+      time: "Late morning",
+      place: "Coldstream",
+      title: "Morning Wander Around Coldstream",
+      people: ["Mike", "Sharon", "Ellis", "Murray", "Patrick"],
+      tags: ["moment", "Coldstream", "wander"],
+      quickNotes:
+        "Everyone had a morning wander around Coldstream.",
+      narrative:
+        "After the morning walk, the day widened out to include everyone: a wander around Coldstream, letting the town settle into the trip in that gentle way familiar places do. Streets, shopfronts, old family context, and the sense of being back somewhere that already knows part of the story.",
+      media: []
+    },
+    {
+      date: "Monday 3 August 2026",
+      time: "Late morning",
+      place: "The Newcastle Arms, Coldstream",
+      title: "Drinks at The Newcastle Arms",
+      people: ["Mike", "Sharon", "Ellis", "Murray", "Patrick"],
+      tags: ["moment", "drinks", "Coldstream", "Newcastle Arms"],
+      quickNotes:
+        "Drinks at The Newcastle Arms during the Coldstream wander.",
+      narrative:
+        "The wander found its natural pause at The Newcastle Arms. A drink stop in Coldstream is exactly the kind of ordinary detail that will matter later: everyone together, the day still open, the Borders moving at its own pace.",
+      media: []
+    },
+    {
+      date: "Monday 3 August 2026",
+      time: "Lunch",
+      place: "The Black Bull, Etal",
+      title: "Lunch at The Black Bull",
+      people: ["Mike", "Sharon", "Ellis", "Murray", "Patrick"],
+      tags: ["food", "Etal", "Black Bull"],
+      quickNotes:
+        "Lunch at The Black Bull in Etal: Ellis had gammon steak, Murray had fish and chips, Sharon had salmon, Mike had a burger, and Patrick had sausage, mash, and veg.",
+      narrative:
+        "Lunch was at The Black Bull in Etal, a proper Borders pause between the morning in Coldstream and the afternoon out towards the castle ruins. Around the table it became its own little roll-call: Ellis with gammon steak, Murray with fish and chips, Sharon with salmon, Mike with a burger, and Patrick very much included with sausage, mash, and veg.",
+      media: [
+        {
+          type: "photo",
+          src: "assets/photos/monday/black-bull-lunch/ellis-gammon-steak.jpeg",
+          caption: "Ellis: gammon steak at The Black Bull."
+        },
+        {
+          type: "photo",
+          src: "assets/photos/monday/black-bull-lunch/murray-fish-and-chips.jpeg",
+          caption: "Murray: fish and chips at The Black Bull."
+        },
+        {
+          type: "photo",
+          src: "assets/photos/monday/black-bull-lunch/sharon-salmon.jpeg",
+          caption: "Sharon: salmon at The Black Bull."
+        },
+        {
+          type: "photo",
+          src: "assets/photos/monday/black-bull-lunch/mike-burger.jpeg",
+          caption: "Mike: burger at The Black Bull."
+        },
+        {
+          type: "photo",
+          src: "assets/photos/monday/black-bull-lunch/patrick-sausage-mash-veg.jpeg",
+          caption: "Patrick: sausage, mash, and veg at The Black Bull."
+        }
+      ]
+    },
+    {
+      date: "Monday 3 August 2026",
+      time: "Afternoon",
+      place: "Etal Castle ruins",
+      title: "A Stroll to Etal Castle",
+      people: ["Mike", "Sharon", "Ellis", "Murray", "Patrick"],
+      tags: ["activity", "event", "Etal", "castle ruins", "history"],
+      quickNotes:
+        "A stroll to the castle ruins after lunch at The Black Bull.",
+      narrative:
+        "After lunch came the stroll to Etal Castle ruins, where the day touched a different kind of history. Not the loud history of horses and standards, but the quiet kind: stonework, grass, old borders, and the feeling that every village around here has another layer if you give it a little time.",
+      media: [
+        {
+          type: "photo",
+          src: "assets/photos/monday/etal-castle/etal-castle-approach.jpeg",
+          caption: "The approach around Etal Castle and its old stone buildings."
+        },
+        {
+          type: "photo",
+          src: "assets/photos/monday/etal-castle/etal-castle-ruin.jpeg",
+          caption: "Etal Castle ruins after lunch at The Black Bull."
+        },
+        {
+          type: "photo",
+          src: "assets/photos/monday/etal-castle/etal-castle-and-building.jpeg",
+          caption: "The castle ruins and neighbouring buildings under a bright Borders sky."
+        }
+      ]
+    },
+    {
+      date: "Monday 3 August 2026",
+      time: "Afternoon",
+      place: "Old Chapel Cidery",
+      title: "Old Chapel Cidery",
+      people: ["Mike", "Sharon", "Ellis", "Murray", "Patrick"],
+      tags: ["moment", "Old Chapel Cidery", "Etal"],
+      quickNotes:
+        "A visit to Old Chapel Cidery after the stroll to the castle ruins.",
+      narrative:
+        "From the castle ruins, the day moved on to Old Chapel Cidery. It is a pleasing kind of holiday punctuation mark: something local, slightly unexpected, and easy to remember as part of the route the day took before everyone gathered again for the ride-out.",
+      media: [
+        {
+          type: "photo",
+          src: "assets/photos/monday/chapel-cidery/old-chapel-cidery-shop-corner.jpeg",
+          caption: "The shop corner at Old Chapel Cidery."
+        },
+        {
+          type: "photo",
+          src: "assets/photos/monday/chapel-cidery/old-chapel-cidery-inside.jpeg",
+          caption: "Inside Old Chapel Cidery, with the working space set out for bottling and tasting."
+        },
+        {
+          type: "photo",
+          src: "assets/photos/monday/chapel-cidery/old-chapel-cidery-peach-bottle.jpeg",
+          caption: "The peach cider bottle at Old Chapel Cidery."
+        },
+        {
+          type: "photo",
+          src: "assets/photos/monday/chapel-cidery/old-chapel-cidery-shelves.jpeg",
+          caption: "Shelves of bottles at Old Chapel Cidery."
+        },
+        {
+          type: "photo",
+          src: "assets/photos/monday/chapel-cidery/old-chapel-cidery-bottles.jpeg",
+          caption: "Bottles lined up at Old Chapel Cidery."
+        },
+        {
+          type: "photo",
+          src: "assets/photos/monday/chapel-cidery/old-chapel-cidery-casks.jpeg",
+          caption: "Old Chapel Cidery casks and sign."
+        },
+        {
+          type: "photo",
+          src: "assets/photos/monday/chapel-cidery/old-chapel-cidery-haul.jpeg",
+          caption: "The haul from Old Chapel Cidery: farmhouse scrumpy, raspberry and coconut cider, peach cider, and blackcurrant cider."
+        }
+      ]
+    },
+    {
+      date: "Monday 3 August 2026",
+      time: "Around 16:00",
+      place: "The Besom, Coldstream",
+      title: "Norham Ride-out at The Besom",
+      people: ["Mike", "Sharon", "Ellis", "Murray", "Patrick"],
+      tags: ["activity", "event", "ride-out", "Norham", "The Besom", "Dub Dash"],
+      quickNotes:
+        "Everyone was at The Besom in time for the Norham ride-out around 4pm. Bumped into Martyn Law, who had stories about the Dub Dash. The supplied video is the tail end of the ride-out.",
+      narrative:
+        "By around four o'clock everyone was at The Besom in time for the Norham ride-out. The horses brought Civic Week back into the centre of the day, and then came one of those bonus Borders moments: bumping into Martyn Law, with stories about the Dub Dash that folded another strand of local memory into the trip. The video belongs here as the tail end of the ride-out passing through.",
+      media: [
+        {
+          type: "video",
+          src: "assets/videos/monday/norham-ride-out-tail.mp4",
+          caption: "Tail end of the Norham ride-out at The Besom."
         }
       ]
     },
@@ -390,4 +641,6 @@ window.tripData = {
     }
   ]
 };
+
+
 
