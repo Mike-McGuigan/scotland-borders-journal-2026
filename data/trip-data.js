@@ -32,10 +32,10 @@
       chapter: "Prologue",
       title: "The Story Starts Before the Road",
       date: "Before the trip",
-      place: "Coldstream, Kelso, Blakelaw",
-      tags: ["family history", "backstory"],
+      place: "Coldstream, Kelso, Blakelaw, Smailholm",
+      tags: ["family history", "backstory", "Smailholm"],
       narrative:
-        "The journey begins long before the car is packed. Sharon was born in Coldstream Cottage Hospital in 1970, and over the years Coldstream, Kelso, Civic Week, Uncle Jock and Auntie Jocelyn, and the cottage at Blakelaw Farm have become part of the family's own map."
+        "The journey begins long before the car is packed. Sharon was born in Coldstream Cottage Hospital in 1970, and over the years Coldstream, Kelso, Civic Week, Uncle Jock and Auntie Jocelyn, the cottage at Blakelaw Farm, and Smailholm Tower on the horizon have become part of the family's own map."
     },
     {
       chapter: "Getting There",
@@ -75,12 +75,12 @@
     },
     {
       chapter: "Wednesday",
-      title: "Torchlight by Candle",
-      date: "Wednesday evening",
+      title: "Remembrance, Kelso, and Torchlight",
+      date: "Wednesday 5 August 2026",
       place: "Top gates of Home Park to Tweed Green",
-      tags: ["torchlight", "fireworks", "Tweed Green"],
+      tags: ["remembrance", "Kelso", "Linton", "torchlight", "fireworks", "Tweed Green"],
       narrative:
-        "The torchlight procession begins at the top gates of Home Park with real candles, winds around the town, and ends at Tweed Green for the firework display. It should feel fragile, human, and old-fashioned in the best possible way."
+        "Wednesday carries both quiet remembrance and Civic Week atmosphere: flowers at The Lennel in Coldstream, lunch at The Cobbles in Kelso, flowers again at Linton Church, and then the torchlight procession beginning at the top gates of Home Park with real candles before ending at Tweed Green for the firework display."
     },
     {
       chapter: "Thursday",
@@ -140,8 +140,38 @@
       quickNotes:
         "Sharon born in Coldstream Cottage Hospital. Family visits to Coldstream, Kelso, Civic Week, Blakelaw Farm, Jock and Jocelyn.",
       narrative:
-        "This trip begins long before the first diary entry. Sharon was born in Coldstream Cottage Hospital on May 6th, 1970, and the Borders have stayed quietly threaded through the family ever since. Coldstream, Kelso, Civic Week, Home Place, Blakelaw Farm, Uncle Jock and Auntie Jocelyn, the Kelso Colts, the Harlequins, and the cottage at Blakelaw all belong to that older map of memory.",
-      media: []
+        "This trip begins long before the first diary entry. Sharon was born in Coldstream Cottage Hospital on May 6th, 1970, and the Borders have stayed quietly threaded through the family ever since. Coldstream, Kelso, Civic Week, Home Place, Blakelaw Farm, Uncle Jock and Auntie Jocelyn, the Kelso Colts, the Harlequins, and the cottage at Blakelaw all belong to that older map of memory. Visiting Blakelaw again brought that thread right back into view: the farm sign, the plough memorial to Jock, and the reminder of his link to Kelso Colts rugby team, the Harlequins.",
+      media: [
+        {
+          type: "photo",
+          src: "assets/photos/memories/blakelaw-farm-sign-and-plough.jpeg",
+          caption: "Blakelaw Farm, with the farm sign and plough memorial to Jock and his Harlequins connection."
+        }
+      ]
+    },
+    {
+      date: "Across the week",
+      time: "Coming and going",
+      place: "The cottage road near Smailholm",
+      title: "Smailholm on the Horizon",
+      people: ["Mike", "Sharon", "Ellis", "Murray", "Patrick"],
+      tags: ["memory", "Smailholm", "cottage", "landmark"],
+      quickNotes:
+        "Every time we head out from the cottage or return to it, Smailholm Tower sits in the distance.",
+      narrative:
+        "Smailholm Tower became one of the quiet constants of the stay: there in the distance whenever the day began from the cottage, and still there when everyone returned. The tower itself is a 15th-century Borders tower house, standing on a rocky outcrop near Sandyknowe, with the sort of wide views that explain why these places mattered. Historic Scotland also links it closely with Sir Walter Scott, whose imagination was shaped by this landscape and its ballads. It does not need to belong to a single timestamp. It is more like part of the week's weather: a landmark on the edge of things, watching over the coming and going.",
+      media: [
+        {
+          type: "photo",
+          src: "assets/photos/memories/smailholm-tower-from-the-cottage-road.jpeg",
+          caption: "Smailholm Tower seen from the road near the cottage."
+        },
+        {
+          type: "photo",
+          src: "assets/photos/memories/smailholm-tower-on-the-horizon.jpeg",
+          caption: "Smailholm Tower on the horizon, one of the week's familiar sights."
+        }
+      ]
     },
     {
       date: "Sunday 2 August 2026",
@@ -347,7 +377,7 @@
       quickNotes:
         "A stroll to the castle ruins after lunch at The Black Bull.",
       narrative:
-        "After lunch came the stroll to Etal Castle ruins, where the day touched a different kind of history. Not the loud history of horses and standards, but the quiet kind: stonework, grass, old borders, and the feeling that every village around here has another layer if you give it a little time.",
+        "After lunch came the stroll to Etal Castle ruins, where the day touched a different kind of history. Etal was one of the small castles of the Anglo-Scottish border, strengthened in the 14th century by the Manners family in a landscape shaped by raiding, wardens, and March law. In 1513 it was briefly taken by James IV on the road to Flodden, then recovered after the Scottish defeat. Standing among the remains, the history feels quieter than the horses and standards of Civic Week, but it is the same border country speaking in stonework, grass, and old defensive lines.",
       media: [
         {
           type: "photo",
@@ -376,7 +406,7 @@
       quickNotes:
         "A visit to Old Chapel Cidery after the stroll to the castle ruins.",
       narrative:
-        "From the castle ruins, the day moved on to Old Chapel Cidery. It is a pleasing kind of holiday punctuation mark: something local, slightly unexpected, and easy to remember as part of the route the day took before everyone gathered again for the ride-out.",
+        "From the castle ruins, the day moved on to Old Chapel Cidery. Northumbrian Cider & Wine Company now makes craft cider, wine, and juice there, in The Old Chapel beside Etal Castle on the Ford & Etal Estate. That setting gives the stop its charm: a former chapel folded into a working local cidery, old stone and present-day craft sitting side by side before everyone gathered again for the ride-out.",
       media: [
         {
           type: "photo",
@@ -647,7 +677,92 @@
       ]
     },
     {
-      date: "Wednesday",
+      date: "Tuesday 4 August 2026",
+      time: "Evening",
+      place: "The Threshing Mill Cottage",
+      title: "A Small Cottage Visitor",
+      people: ["Mike", "Sharon", "Ellis", "Murray", "Patrick"],
+      tags: ["cottage", "wildlife", "Tuesday evening"],
+      quickNotes:
+        "A small unexpected visitor appeared on the gravel outside the cottage on Tuesday evening.",
+      narrative:
+        "Tuesday evening brought one more tiny addition to the cottage story: a small visitor on the gravel, perfectly camouflaged among the stones. It is exactly the sort of little holiday detail that would be easy to miss at the time, but lovely to have tucked into the diary afterwards.",
+      media: [
+        {
+          type: "photo",
+          src: "assets/photos/tuesday/cottage/small-cottage-visitor.jpeg",
+          caption: "The small Tuesday evening visitor outside the cottage."
+        }
+      ]
+    },
+    {
+      date: "Wednesday 5 August 2026",
+      time: "Morning",
+      place: "The Lennel, Coldstream",
+      title: "Flowers at The Lennel",
+      people: ["Mike", "Sharon", "Ellis", "Murray", "Patrick"],
+      tags: ["memory", "family history", "Coldstream", "flowers", "roses", "The Lennel"],
+      quickNotes:
+        "A Wednesday morning visit to The Lennel in Coldstream to lay flowers for Sharon's grandparents, Joseph and Isa, their sons, and Sharon's cousin Diane. Joseph had been the gravedigger and graveyard maintainer there, and Sharon included roses because he loved them.",
+      narrative:
+        "Wednesday morning began quietly at The Lennel in Coldstream, laying flowers for Sharon's grandparents, Joseph and Isa, and their sons. Joseph had been the gravedigger and graveyard maintainer at The Lennel, and he loved roses, keeping them in his garden at home and in the graveyard. That is why Sharon chose roses for the flowers today: not just flowers, but the right flowers. There was also time there for Sharon's cousin Diane, taken far too early. It is one of the tender parts of this Borders trip: not only showing Ellis and Murray the places, but standing for a moment with the people whose lives made those places matter.",
+      media: [
+        {
+          type: "photo",
+          src: "assets/photos/wednesday/lennel/joseph-isa-and-family.jpeg",
+          caption: "Roses and flowers laid at The Lennel for Joseph, Isa, and family."
+        },
+        {
+          type: "photo",
+          src: "assets/photos/wednesday/lennel/diane-sanderson.jpeg",
+          caption: "Remembering Sharon's cousin Diane at The Lennel."
+        }
+      ]
+    },
+    {
+      date: "Wednesday 5 August 2026",
+      time: "Lunch",
+      place: "The Cobbles, Kelso",
+      title: "Lunch at The Cobbles",
+      people: ["Mike", "Sharon", "Ellis", "Murray", "Patrick"],
+      tags: ["food", "Kelso", "The Cobbles"],
+      quickNotes:
+        "Lunch at The Cobbles in Kelso: Ellis had risotto, Murray had a loaded burger, Sharon had risotto, Mike had fish and chips, and Patrick was lucky enough to have some of Murray's burger.",
+      narrative:
+        "After the morning at The Lennel, lunch at The Cobbles in Kelso gave the day a warmer middle. Ellis and Sharon both had risotto, Murray had a loaded burger, Mike had fish and chips, and Patrick once again found himself in the right place at the right time, lucky enough to share a little of Murray's burger.",
+      media: []
+    },
+    {
+      date: "Wednesday 5 August 2026",
+      time: "Afternoon",
+      place: "Linton Church",
+      title: "Flowers at Linton Church",
+      people: ["Mike", "Sharon", "Ellis", "Murray", "Patrick"],
+      tags: ["memory", "family history", "Linton", "flowers", "local legend"],
+      quickNotes:
+        "A Wednesday afternoon visit to Linton Church to lay flowers for Sharon's auntie and uncle, Jocelyn and Jock, and their son Ian.",
+      narrative:
+        "Wednesday afternoon moved to Linton Church, to lay flowers for Sharon's auntie and uncle, Jocelyn and Jock, and for their son Ian, gone too early. The church itself carries a deep Borders story. Records of Linton church go back to the 12th century, and Historic Environment Scotland describes it as a Romanesque church set on a knoll, altered and restored across the centuries. Above the doorway is the worn carved stone often associated locally with the <a href='https://en.wikipedia.org/wiki/Worm_of_Linton' target='_blank' rel='noopener'>Linton Worm</a> legend, though historians are careful about whether it shows that tale or a wider St George/St Michael tradition. The mound has its own legend too: local tradition says two sisters sifted the sand to make it, saving their brother's life after he had killed a priest. Whether history or story, it gives the place a strange tenderness: grief, family, myth, and old faith all gathered on the same small rise.",
+      media: [
+        {
+          type: "photo",
+          src: "assets/photos/wednesday/linton/jocelyn-and-jock-todd.jpeg",
+          caption: "Flowers for Jocelyn and Jock Todd at Linton Church."
+        },
+        {
+          type: "photo",
+          src: "assets/photos/wednesday/linton/ian-david-todd.jpeg",
+          caption: "Remembering Ian David Todd at Linton Church."
+        },
+        {
+          type: "photo",
+          src: "assets/photos/wednesday/linton/todd-family-flowers.jpeg",
+          caption: "Flowers laid for the Todd family at Linton Church."
+        }
+      ]
+    },
+    {
+      date: "Wednesday 5 August 2026",
       time: "Evening",
       place: "Top gates of Home Park to Tweed Green",
       title: "Torchlight Procession",
@@ -787,6 +902,9 @@
     }
   ]
 };
+
+
+
 
 
 
