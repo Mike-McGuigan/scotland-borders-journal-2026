@@ -545,11 +545,21 @@ summary {
 
 
 .media-item {
+  position: relative;
   margin: 0;
   overflow: hidden;
   border-radius: 8px;
   background: #fbfaf6;
   border: 1px solid var(--line);
+}
+
+.photo-item {
+  cursor: zoom-in;
+}
+
+.photo-item:focus-visible {
+  outline: 3px solid var(--river);
+  outline-offset: 3px;
 }
 
 .media-item img,
@@ -566,6 +576,90 @@ summary {
   color: var(--muted);
   font: 700 0.78rem Arial, sans-serif;
   line-height: 1.35;
+}
+
+.media-expand {
+  position: absolute;
+  z-index: 2;
+  top: 10px;
+  right: 10px;
+  padding: 7px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 6px;
+  background: rgba(28, 34, 31, 0.72);
+  color: white;
+  font: 800 0.72rem Arial, sans-serif;
+  cursor: zoom-in;
+}
+
+.media-expand:focus-visible {
+  outline: 3px solid var(--river);
+  outline-offset: 2px;
+}
+
+.media-viewer {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+}
+
+.media-viewer-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 18, 17, 0.84);
+}
+
+.media-viewer-panel {
+  position: relative;
+  z-index: 1;
+  width: min(1120px, 96vw);
+  max-height: 92vh;
+}
+
+.media-viewer-panel figure {
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.media-viewer-panel img,
+.media-viewer-panel video {
+  display: block;
+  width: 100%;
+  max-height: 82vh;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #111;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.45);
+}
+
+.media-viewer-panel figcaption {
+  color: #fffdf6;
+  font: 800 0.9rem Arial, sans-serif;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.media-viewer-close {
+  position: absolute;
+  z-index: 2;
+  top: -12px;
+  right: -12px;
+  padding: 9px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  border-radius: 999px;
+  background: #fffdf6;
+  color: var(--ink);
+  font: 900 0.78rem Arial, sans-serif;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+body.viewer-open {
+  overflow: hidden;
 }
 .media-placeholder {
   min-height: 130px;
@@ -681,5 +775,6 @@ summary {
     font-size: 0.68rem;
   }
 }
+
 
 

@@ -164,21 +164,33 @@ function renderEntryMedia(media) {
   `;
 }
 
+function escapeAttr(value) {
+  return String(value)
+    .replace(/&/g, "&amp;")
+    .replace(/"/g, "&quot;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+}
+
 function renderMediaItem(item) {
+  const caption = escapeAttr(item.caption);
+  const src = escapeAttr(item.src);
+
   if (item.type === "photo") {
     return `
-      <figure class="media-item photo-item">
-        <img src="${item.src}" alt="${item.caption}" loading="lazy">
-        <figcaption>${item.caption}</figcaption>
+      <figure class="media-item photo-item" role="button" tabindex="0" data-media-type="photo" data-media-src="${src}" data-media-caption="${caption}" aria-label="Open larger photo: ${caption}">
+        <img src="${src}" alt="${caption}" loading="lazy">
+        <figcaption>${caption}</figcaption>
       </figure>
     `;
   }
 
   if (item.type === "video") {
     return `
-      <figure class="media-item video-item">
-        <video src="${item.src}" controls preload="metadata"></video>
-        <figcaption>${item.caption}</figcaption>
+      <figure class="media-item video-item" data-media-type="video" data-media-src="${src}" data-media-caption="${caption}">
+        <button class="media-expand" type="button" data-media-open aria-label="Open larger video">Open larger</button>
+        <video src="${src}" controls preload="metadata"></video>
+        <figcaption>${caption}</figcaption>
       </figure>
     `;
   }
@@ -186,10 +198,53 @@ function renderMediaItem(item) {
   return `
     <div class="media-placeholder">
       <span>${item.type}</span>
-      <strong>${item.caption}</strong>
-      <small>${item.src}</small>
+      <strong>${caption}</strong>
+      <small>${src}</small>
     </div>
   `;
+}
+
+function openMediaViewer(item) {
+  const existing = document.querySelector(".media-viewer");
+  if (existing) {
+    existing.remove();
+  }
+
+  const viewer = document.createElement("div");
+  viewer.className = "media-viewer";
+  viewer.setAttribute("role", "dialog");
+  viewer.setAttribute("aria-modal", "true");
+  viewer.setAttribute("aria-label", item.caption);
+
+  const mediaMarkup =
+    item.type === "video"
+      ? `<video src="${item.src}" controls autoplay></video>`
+      : `<img src="${item.src}" alt="${item.caption}">`;
+
+  viewer.innerHTML = `
+    <div class="media-viewer-backdrop" data-media-close></div>
+    <div class="media-viewer-panel">
+      <button class="media-viewer-close" type="button" data-media-close aria-label="Close larger media">Close</button>
+      <figure>
+        ${mediaMarkup}
+        <figcaption>${item.caption}</figcaption>
+      </figure>
+    </div>
+  `;
+
+  document.body.appendChild(viewer);
+  document.body.classList.add("viewer-open");
+  viewer.querySelector(".media-viewer-close").focus();
+}
+
+function closeMediaViewer() {
+  const viewer = document.querySelector(".media-viewer");
+  if (!viewer) {
+    return;
+  }
+
+  viewer.remove();
+  document.body.classList.remove("viewer-open");
 }
 
 function renderReplay() {
@@ -227,6 +282,54 @@ prevStep.addEventListener("click", () => {
 nextStep.addEventListener("click", () => {
   replayIndex = Math.min(replay.length - 1, replayIndex + 1);
   renderReplay();
+});
+
+diaryList.addEventListener("click", (event) => {
+  const opener = event.target.closest("[data-media-open], .photo-item");
+  if (!opener || !diaryList.contains(opener)) {
+    return;
+  }
+
+  const item = opener.closest("[data-media-src]");
+  if (!item) {
+    return;
+  }
+
+  openMediaViewer({
+    type: item.dataset.mediaType,
+    src: item.dataset.mediaSrc,
+    caption: item.dataset.mediaCaption
+  });
+});
+
+diaryList.addEventListener("keydown", (event) => {
+  if (event.key !== "Enter" && event.key !== " ") {
+    return;
+  }
+
+  const item = event.target.closest(".photo-item[data-media-src]");
+  if (!item) {
+    return;
+  }
+
+  event.preventDefault();
+  openMediaViewer({
+    type: item.dataset.mediaType,
+    src: item.dataset.mediaSrc,
+    caption: item.dataset.mediaCaption
+  });
+});
+
+document.addEventListener("click", (event) => {
+  if (event.target.closest("[data-media-close]")) {
+    closeMediaViewer();
+  }
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    closeMediaViewer();
+  }
 });
 
 renderPeople();
