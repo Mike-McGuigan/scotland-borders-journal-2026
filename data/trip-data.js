@@ -1,4 +1,4 @@
-window.tripData = {
+﻿window.tripData = {
   people: [
     {
       name: "Mike",
@@ -56,43 +56,22 @@ window.tripData = {
         "Across the week, the ride-outs give the town its rhythm: horses, roads, people gathering, and the sense that Coldstream is briefly arranging itself around older traditions."
     },
     {
+      chapter: "Monday",
+      title: "Coldstream, Etal, and Norham Horses",
       date: "Monday 3 August 2026",
-      time: "Lunch",
-      place: "The Black Bull, Etal",
-      title: "Lunch at The Black Bull",
-      people: ["Mike", "Sharon", "Ellis", "Murray", "Patrick"],
-      tags: ["food", "Etal", "Black Bull"],
-      quickNotes:
-        "Lunch at The Black Bull in Etal: Ellis had gammon steak, Murray had fish and chips, Sharon had salmon, Mike had a burger, and Patrick had sausage, mash, and veg.",
+      place: "Coldstream, Etal, Old Chapel Cidery, The Besom",
+      tags: ["Coldstream", "Etal", "Norham ride-out"],
       narrative:
-        "Lunch was at The Black Bull in Etal, a proper Borders pause between the morning in Coldstream and the afternoon out towards the castle ruins. Around the table it became its own little roll-call: Ellis with gammon steak, Murray with fish and chips, Sharon with salmon, Mike with a burger, and Patrick very much included with sausage, mash, and veg.",
-      media: [
-        {
-          type: "photo",
-          src: "assets/photos/monday/black-bull-lunch/ellis-gammon-steak.jpeg",
-          caption: "Ellis: gammon steak at The Black Bull."
-        },
-        {
-          type: "photo",
-          src: "assets/photos/monday/black-bull-lunch/murray-fish-and-chips.jpeg",
-          caption: "Murray: fish and chips at The Black Bull."
-        },
-        {
-          type: "photo",
-          src: "assets/photos/monday/black-bull-lunch/sharon-salmon.jpeg",
-          caption: "Sharon: salmon at The Black Bull."
-        },
-        {
-          type: "photo",
-          src: "assets/photos/monday/black-bull-lunch/mike-burger.jpeg",
-          caption: "Mike: burger at The Black Bull."
-        },
-        {
-          type: "photo",
-          src: "assets/photos/monday/black-bull-lunch/patrick-sausage-mash-veg.jpeg",
-          caption: "Patrick: sausage, mash, and veg at The Black Bull."
-        }
-      ]
+        "Monday moved from a quiet morning walk for Ellis, Murray, and Patrick into a shared day around Coldstream, drinks at The Newcastle Arms, lunch at The Black Bull in Etal, castle ruins, Old Chapel Cidery, and the Norham ride-out at The Besom."
+    },
+    {
+      chapter: "Tuesday",
+      title: "Tweed, Breakfast, St Boswells, and Kelso",
+      date: "Tuesday 4 August 2026",
+      place: "The Tweed, St Boswells, Kelso Town Square",
+      tags: ["Tweed", "St Boswells", "Kelso", "shopping"],
+      narrative:
+        "Tuesday kept a softer pace: Ellis, Murray, and Patrick walked from the cottage to the Tweed and back, Sharon made a lovely breakfast, then everyone headed to St Boswells for a lunchtime stroll and a light lunch at the Buccleuch Arms before returning to Kelso Town Square for a wander and a few treats."
     },
     {
       chapter: "Wednesday",
@@ -209,52 +188,7 @@ window.tripData = {
         }
       ]
     },
-    {
-      date: "Sunday 2 August 2026",
-      time: "08:51-09:37 BST",
-      place: "Borders countryside",
-      title: "Morning Walk",
-      people: ["Ellis", "Murray", "Patrick", "Mike"],
-      tags: ["activity", "walk", "route"],
-      quickNotes:
-        "GPX import. 2.19 km in 46m 54s, with around 26 m of ascent and descent.",
-      narrative:
-        "A gentle morning loop to prove the activity log idea: not a full route-planning tool, just a way of letting walked, ridden, or driven moments sit naturally alongside the diary. Later, entries like this can show the route, photos, timing, and whatever small memory belongs to that bit of the day.",
-      activity: {
-        type: "Walk",
-        source: "GPX",
-        file: "assets/routes/morning-walk.gpx",
-        distanceKm: 2.19,
-        duration: "46m 54s",
-        elevationGainM: 26,
-        startTime: "2026-08-02T07:51:02Z",
-        endTime: "2026-08-02T08:37:56Z",
-        points: 2627
-      },
-      media: [
         {
-          type: "photo",
-          src: "assets/photos/monday/morning-walk/murray-and-patrick-field-track.jpeg",
-          caption: "Murray and Patrick setting off along the field track."
-        },
-        {
-          type: "photo",
-          src: "assets/photos/monday/morning-walk/morning-track-and-fields.jpeg",
-          caption: "The morning track through the Borders fields."
-        },
-        {
-          type: "photo",
-          src: "assets/photos/monday/morning-walk/murray-and-patrick-ball.jpeg",
-          caption: "Murray and Patrick with the ball on the morning walk."
-        },
-        {
-          type: "photo",
-          src: "assets/photos/monday/morning-walk/patrick-and-murray-walking.jpeg",
-          caption: "Patrick and Murray walking back along the track."
-        }
-      ]
-    },
-    {
       date: "Sunday 2 August 2026",
       time: "18:42-19:14 BST",
       place: "Borders countryside",
@@ -501,6 +435,218 @@ window.tripData = {
       ]
     },
     {
+      date: "Tuesday 4 August 2026",
+      time: "Morning",
+      place: "The Threshing Mill Cottage to the Tweed",
+      title: "To the Tweed and Back",
+      people: ["Ellis", "Murray", "Patrick"],
+      tags: ["activity", "walk", "Tweed", "Patrick"],
+      quickNotes:
+        "Ellis, Murray, and Patrick went for a lovely walk from the cottage down to the Tweed and back.",
+      narrative:
+        "Tuesday began with Ellis, Murray, and Patrick walking from the cottage to the Tweed and back. It has the feel of a proper Borders morning: fields and river pulling the day into shape before everyone gathered again around breakfast and the plans beyond the cottage.",
+      media: [
+        {
+          type: "photo",
+          src: "assets/photos/tuesday/tweed-walk/wildflowers.jpeg",
+          caption: "Wildflowers on the morning walk down towards the Tweed."
+        },
+        {
+          type: "photo",
+          src: "assets/photos/tuesday/tweed-walk/fields-to-the-tweed.jpeg",
+          caption: "Fields and wide Borders sky on the way to the Tweed."
+        },
+        {
+          type: "photo",
+          src: "assets/photos/tuesday/tweed-walk/patrick-by-the-fields.jpeg",
+          caption: "Patrick pausing by the fields on the walk."
+        },
+        {
+          type: "photo",
+          src: "assets/photos/tuesday/tweed-walk/woodland-track.jpeg",
+          caption: "The wooded track near the Tweed."
+        },
+        {
+          type: "photo",
+          src: "assets/photos/tuesday/tweed-walk/track-back-from-the-tweed.jpeg",
+          caption: "The track back from the Tweed."
+        },
+        {
+          type: "photo",
+          src: "assets/photos/tuesday/tweed-walk/last-view-over-fields.jpeg",
+          caption: "A final view over the fields before heading back."
+        },
+        {
+          type: "video",
+          src: "assets/videos/tuesday/tweed-walk/tweed-walk-clip-1.mov",
+          caption: "Short clip from the walk to the Tweed."
+        },
+        {
+          type: "video",
+          src: "assets/videos/tuesday/tweed-walk/tweed-walk-clip-2.mov",
+          caption: "Another short clip from the Tweed walk."
+        },
+        {
+          type: "video",
+          src: "assets/videos/tuesday/tweed-walk/tweed-walk-clip-3.mov",
+          caption: "Final short clip from the morning walk."
+        }
+      ]
+    },
+    {
+      date: "Tuesday 4 August 2026",
+      time: "Morning",
+      place: "The Threshing Mill Cottage",
+      title: "Sharon's Breakfast",
+      people: ["Mike", "Sharon", "Ellis", "Murray", "Patrick"],
+      tags: ["food", "breakfast", "cottage"],
+      quickNotes:
+        "Sharon prepared a lovely breakfast for everyone after the morning walk.",
+      narrative:
+        "Back at the cottage, Sharon prepared a lovely breakfast for everyone. It is one of those quiet holiday luxuries: a table, everyone easing into the day, and the sense that the best parts of a trip are often the ones that do not need much arranging.",
+      media: []
+    },
+    {
+      date: "Tuesday 4 August 2026",
+      time: "Lunchtime",
+      place: "St Boswells",
+      title: "A St Boswells Stroll",
+      people: ["Mike", "Sharon", "Ellis", "Murray", "Patrick"],
+      tags: ["activity", "St Boswells", "stroll"],
+      quickNotes:
+        "Everyone had a lunchtime stroll around St Boswells.",
+      narrative:
+        "By lunchtime the day had moved to St Boswells for a stroll around town. It belongs in the journal as a gentle local interlude: near to the cottage, easy to wander, and part of letting this year's base find its place in the family map.",
+      media: [
+        {
+          type: "photo",
+          src: "assets/photos/tuesday/st-boswells/st-boswells-building.jpeg",
+          caption: "A St Boswells building from the lunchtime wander."
+        }
+      ]
+    },
+    {
+      date: "Tuesday 4 August 2026",
+      time: "Lunch",
+      place: "Buccleuch Arms, St Boswells",
+      title: "Light Lunch at the Buccleuch Arms",
+      people: ["Mike", "Sharon", "Ellis", "Murray", "Patrick"],
+      tags: ["food", "St Boswells", "Buccleuch Arms"],
+      quickNotes:
+        "A light lunch at the Buccleuch Arms after the St Boswells stroll: Ellis had prawn cocktail, Murray had deep-fried halloumi, Sharon had a prawn sandwich, Mike had whitebait, and Patrick had a little bit of everyone else's.",
+      narrative:
+        "The St Boswells stroll settled into a light lunch at the Buccleuch Arms. Around the table it became another small roll-call: Ellis with prawn cocktail, Murray with deep-fried halloumi, Sharon with a prawn sandwich, Mike with whitebait, and Patrick very sensibly sampling a little bit of everyone else's. After the morning walk and Sharon's breakfast, it gave the middle of the day an unhurried pause before Kelso pulled everyone back into town-square wandering and small treats.",
+      media: [
+        {
+          type: "photo",
+          src: "assets/photos/tuesday/buccleuch-arms/buccleuch-arms-exterior.jpeg",
+          caption: "The Buccleuch Arms exterior during the St Boswells stop."
+        },
+        {
+          type: "photo",
+          src: "assets/photos/tuesday/buccleuch-arms/buccleuch-arms-lounge.jpeg",
+          caption: "Inside the Buccleuch Arms."
+        },
+        {
+          type: "photo",
+          src: "assets/photos/tuesday/buccleuch-arms/toast-at-buccleuch-arms.jpeg",
+          caption: "A light bite at the Buccleuch Arms."
+        },
+        {
+          type: "photo",
+          src: "assets/photos/tuesday/buccleuch-arms/light-lunch-croquettes.jpeg",
+          caption: "Murray's deep-fried halloumi at the Buccleuch Arms."
+        },
+        {
+          type: "photo",
+          src: "assets/photos/tuesday/buccleuch-arms/light-lunch-fish.jpeg",
+          caption: "Mike's whitebait at the Buccleuch Arms."
+        },
+        {
+          type: "photo",
+          src: "assets/photos/tuesday/buccleuch-arms/light-lunch-sandwich.jpeg",
+          caption: "Sharon's prawn sandwich at the Buccleuch Arms."
+        },
+        {
+          type: "photo",
+          src: "assets/photos/tuesday/buccleuch-arms/lunch-drink.jpeg",
+          caption: "Ellis's prawn cocktail at the Buccleuch Arms."
+        }
+      ]
+    },
+    {
+      date: "Tuesday 4 August 2026",
+      time: "Afternoon",
+      place: "Kelso Town Square",
+      title: "Treats Around Kelso Town Square",
+      people: ["Mike", "Sharon", "Ellis", "Murray", "Patrick"],
+      tags: ["Kelso", "shopping", "wholefood store", "Fat Face", "Trespass"],
+      quickNotes:
+        "Returned to Kelso for a wander around Town Square, with treats from the wholefood store, Fat Face, and Trespass.",
+      narrative:
+        "The afternoon brought everyone back to Kelso for a wander around Town Square. There were treats from the wholefood store, Fat Face, and Trespass: the kind of small holiday purchases that become little anchors for remembering the day later.",
+      media: []
+    },
+    {
+      date: "Tuesday 4 August 2026",
+      time: "Evening",
+      place: "Charlie's",
+      title: "Charlie's for Murray",
+      people: ["Ellis", "Murray"],
+      tags: ["food", "birthday", "Ellis and Murray", "Charlie's"],
+      quickNotes:
+        "Sharon arranged with Ellis that Ellis would take Murray out for a lovely meal at Charlie's as an early birthday present from Sharon and Mike.",
+      narrative:
+        "With Murray's birthday approaching, Sharon arranged with Ellis that Ellis would take him out for a lovely meal at Charlie's. Sharon and Mike paid for the evening as an early birthday present from them, and it was just the two of them: Ellis and Murray having a night of their own within the wider family trip. They came back very happy with the evening, both saying the food was amazing.",
+      media: [
+        {
+          type: "photo",
+          src: "assets/photos/tuesday/charlies/charlies-building.jpeg",
+          caption: "Arriving at Charlie's for Murray's early birthday meal."
+        },
+        {
+          type: "photo",
+          src: "assets/photos/tuesday/charlies/murray-at-charlies.jpeg",
+          caption: "Murray at Charlie's."
+        },
+        {
+          type: "photo",
+          src: "assets/photos/tuesday/charlies/olives-at-charlies.jpeg",
+          caption: "Olives to start the evening at Charlie's."
+        },
+        {
+          type: "photo",
+          src: "assets/photos/tuesday/charlies/starter-at-charlies.jpeg",
+          caption: "A starter at Charlie's."
+        },
+        {
+          type: "photo",
+          src: "assets/photos/tuesday/charlies/mussels-at-charlies.jpeg",
+          caption: "Mussels at Charlie's."
+        },
+        {
+          type: "photo",
+          src: "assets/photos/tuesday/charlies/main-at-charlies.jpeg",
+          caption: "Main course at Charlie's."
+        },
+        {
+          type: "photo",
+          src: "assets/photos/tuesday/charlies/charlies-entrance.jpeg",
+          caption: "The entrance at Charlie's at the end of the evening."
+        },
+        {
+          type: "photo",
+          src: "assets/photos/tuesday/charlies/classic-car-at-charlies.jpeg",
+          caption: "A classic car outside Charlie's."
+        },
+        {
+          type: "photo",
+          src: "assets/photos/tuesday/charlies/murray-reaching-for-classic-car.jpeg",
+          caption: "Murray reaching for the handle of the classic car outside Charlie's."
+        }
+      ]
+    },
+    {
       date: "Wednesday",
       time: "Evening",
       place: "Top gates of Home Park to Tweed Green",
@@ -641,6 +787,10 @@ window.tripData = {
     }
   ]
 };
+
+
+
+
 
 
 
