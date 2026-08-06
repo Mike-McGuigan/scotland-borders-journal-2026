@@ -1,9 +1,16 @@
 ﻿window.tripData = {
   people: [
     {
-      name: "Mike",
-      role: "Dad, narrator, keeper of notes",
-      initials: "M"
+      name: "Ellis",
+      role: "Showing Murray a piece of her history",
+      initials: "E",
+      photo: "assets/photos/cast/ellis.jpeg"
+    },
+    {
+      name: "Murray",
+      role: "Returning to Scotland, discovering the Borders",
+      initials: "M",
+      photo: "assets/photos/cast/murray.jpeg"
     },
     {
       name: "Sharon",
@@ -11,19 +18,15 @@
       initials: "S"
     },
     {
-      name: "Ellis",
-      role: "Showing Murray a piece of her history",
-      initials: "E"
-    },
-    {
-      name: "Murray",
-      role: "Returning to Scotland, discovering the Borders",
+      name: "Mike",
+      role: "Dad, narrator, keeper of notes",
       initials: "M"
     },
     {
       name: "Patrick",
       role: "Last but not least",
-      initials: "P"
+      initials: "P",
+      photo: "assets/photos/cast/patrick.jpeg"
     }
   ],
 
@@ -157,9 +160,9 @@
       people: ["Mike", "Sharon", "Ellis", "Murray", "Patrick"],
       tags: ["memory", "Smailholm", "cottage", "landmark"],
       quickNotes:
-        "Every time we head out from the cottage or return to it, Smailholm Tower sits in the distance.",
+        "Every time we head out from the cottage or return to it, Smailholm Tower sits in the distance; the view from the cottage explains why.",
       narrative:
-        "Smailholm Tower became one of the quiet constants of the stay: there in the distance whenever the day began from the cottage, and still there when everyone returned. The tower itself is a 15th-century Borders tower house, standing on a rocky outcrop near Sandyknowe, with the sort of wide views that explain why these places mattered. Historic Scotland also links it closely with Sir Walter Scott, whose imagination was shaped by this landscape and its ballads. It does not need to belong to a single timestamp. It is more like part of the week's weather: a landmark on the edge of things, watching over the coming and going.",
+        "Smailholm Tower became one of the quiet constants of the stay: there in the distance whenever the day began from the cottage, and still there when everyone returned. From the cottage road, the landscape opens out just enough to explain why the tower keeps appearing in the corner of the day. The tower itself is a 15th-century Borders tower house, standing on a rocky outcrop near Sandyknowe, with the sort of wide views that explain why these places mattered. Historic Scotland also links it closely with Sir Walter Scott, whose imagination was shaped by this landscape and its ballads. It does not need to belong to a single timestamp. It is more like part of the week's weather: a landmark on the edge of things, watching over the coming and going.",
       media: [
         {
           type: "photo",
@@ -170,6 +173,11 @@
           type: "photo",
           src: "assets/photos/memories/smailholm-tower-on-the-horizon.jpeg",
           caption: "Smailholm Tower on the horizon, one of the week's familiar sights."
+        },
+        {
+          type: "video",
+          src: "assets/videos/memories/smailholm-tower-view-from-cottage.mp4",
+          caption: "The view from the cottage, explaining why Smailholm Tower is always there when we come and go."
         }
       ]
     },
@@ -620,19 +628,19 @@
     {
       date: "Tuesday 4 August 2026",
       time: "Evening",
-      place: "Charlie's",
+      place: "Charlie's, Roxburghe Hotel, Heiton",
       title: "Charlie's for Murray",
       people: ["Ellis", "Murray"],
-      tags: ["food", "birthday", "Ellis and Murray", "Charlie's"],
+      tags: ["food", "birthday", "Ellis and Murray", "Charlie's", "Roxburghe Hotel", "Heiton"],
       quickNotes:
-        "Sharon arranged with Ellis that Ellis would take Murray out for a lovely meal at Charlie's as an early birthday present from Sharon and Mike.",
+        "Sharon arranged with Ellis that Ellis would take Murray out for a lovely meal at Charlie's within the Roxburghe Hotel, Heiton, as an early birthday present from Sharon and Mike.",
       narrative:
-        "With Murray's birthday approaching, Sharon arranged with Ellis that Ellis would take him out for a lovely meal at Charlie's. Sharon and Mike paid for the evening as an early birthday present from them, and it was just the two of them: Ellis and Murray having a night of their own within the wider family trip. They came back very happy with the evening, both saying the food was amazing.",
+        "With Murray's birthday approaching, Sharon arranged with Ellis that Ellis would take him out for a lovely meal at Charlie's within the Roxburghe Hotel, Heiton. Sharon and Mike paid for the evening as an early birthday present from them, and it was just the two of them: Ellis and Murray having a night of their own within the wider family trip. Ellis had white wine poached mussels to start, Murray had gochujang-glazed pork belly, and then they shared chateaubriand with truffle Parmesan fries, peppercorn sauce, and spinach. They came back very happy with the evening, both saying the food was amazing.",
       media: [
         {
           type: "photo",
           src: "assets/photos/tuesday/charlies/charlies-building.jpeg",
-          caption: "Arriving at Charlie's for Murray's early birthday meal."
+          caption: "Arriving at Charlie's within the Roxburghe Hotel, Heiton, for Murray's early birthday meal."
         },
         {
           type: "photo",
@@ -647,17 +655,17 @@
         {
           type: "photo",
           src: "assets/photos/tuesday/charlies/starter-at-charlies.jpeg",
-          caption: "A starter at Charlie's."
+          caption: "Murray's gochujang-glazed pork belly starter at Charlie's."
         },
         {
           type: "photo",
           src: "assets/photos/tuesday/charlies/mussels-at-charlies.jpeg",
-          caption: "Mussels at Charlie's."
+          caption: "Ellis's white wine poached mussels starter at Charlie's."
         },
         {
           type: "photo",
           src: "assets/photos/tuesday/charlies/main-at-charlies.jpeg",
-          caption: "Main course at Charlie's."
+          caption: "The shared chateaubriand main with truffle Parmesan fries, peppercorn sauce, and spinach."
         },
         {
           type: "photo",
@@ -766,17 +774,42 @@
       time: "Evening",
       place: "Top gates of Home Park to Tweed Green",
       title: "Torchlight Procession",
-      people: ["Mike", "Sharon", "Ellis", "Murray", "Patrick"],
-      tags: ["activity", "event", "torchlight", "fireworks"],
+      people: ["Mike", "Sharon", "Ellis", "Murray", "Patrick", "Graham", "Bonnie", "Erin"],
+      tags: ["activity", "event", "torchlight", "fireworks", "The Besom", "friends"],
       quickNotes:
-        "Candle torchlight procession starts at the top gates of Home Park, winds around town, and ends at Tweed Green for fireworks.",
+        "Ellis, Murray, and Sharon went to the candle torchlight procession, while Mike met Graham, Bonnie, and Erin at The Besom with Patrick. The night finished with fireworks at Tweed Green.",
       narrative:
-        "The torchlight procession starts at the top gates of Home Park with real candles, not electric substitutes, which gives the whole evening a softer and more human feel. From there it winds around Coldstream and gathers at Tweed Green, where the night ends with a firework display by the river.",
+        "The torchlight procession starts at the top gates of Home Park with real candles, not electric substitutes, which gives the whole evening a softer and more human feel. Ellis, Murray, and Sharon were there for the torchlight, carrying that candlelit Civic Week atmosphere through the town towards Tweed Green and the fireworks by the river. Mike took a different little branch of the evening, meeting Graham, Bonnie, and Erin at The Besom with Patrick, so the night became two memories running alongside each other before joining back into the same trip.",
       media: [
         {
           type: "photo",
-          src: "assets/photos/wednesday-torchlight-placeholder.jpg",
-          caption: "Add a candlelit procession photo here."
+          src: "assets/photos/wednesday/torchlight/ellis-murray-torchlight.jpeg",
+          caption: "Ellis and Murray at the Wednesday torchlight procession, with Sharon there too."
+        },
+        {
+          type: "video",
+          src: "assets/videos/wednesday/torchlight/fireworks-at-tweed-green-1.mp4",
+          caption: "Fireworks over Tweed Green after the torchlight procession."
+        },
+        {
+          type: "video",
+          src: "assets/videos/wednesday/torchlight/fireworks-at-tweed-green-2.mp4",
+          caption: "Another burst from the Tweed Green firework display."
+        },
+        {
+          type: "video",
+          src: "assets/videos/wednesday/torchlight/fireworks-at-tweed-green-3.mp4",
+          caption: "The fireworks continuing by the Tweed."
+        },
+        {
+          type: "video",
+          src: "assets/videos/wednesday/torchlight/fireworks-at-tweed-green-4.mp4",
+          caption: "A shorter clip from the Wednesday night fireworks."
+        },
+        {
+          type: "video",
+          src: "assets/videos/wednesday/torchlight/fireworks-at-tweed-green-5.mp4",
+          caption: "Final clip from the firework display at Tweed Green."
         }
       ]
     },
@@ -902,6 +935,8 @@
     }
   ]
 };
+
+
 
 
 

@@ -107,6 +107,13 @@ button.active {
   font: 700 0.82rem Arial, sans-serif;
 }
 
+.avatar-photo {
+  display: block;
+  object-fit: cover;
+  border-width: 2px;
+  background: var(--soft);
+}
+
 .nav-links {
   display: flex;
   gap: 18px;

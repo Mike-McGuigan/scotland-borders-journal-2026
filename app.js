@@ -23,7 +23,7 @@ function renderPeople() {
     .map(
       (person) => `
         <article class="person-card">
-          <span class="avatar">${person.initials}</span>
+          ${renderAvatar(person)}
           <div>
             <strong>${person.name}</strong>
             <p>${person.role}</p>
@@ -32,6 +32,16 @@ function renderPeople() {
       `
     )
     .join("");
+}
+
+function renderAvatar(person) {
+  if (person.photo) {
+    const src = escapeAttr(person.photo);
+    const name = escapeAttr(person.name);
+    return `<img class="avatar avatar-photo" src="${src}" alt="${name}">`;
+  }
+
+  return `<span class="avatar">${person.initials}</span>`;
 }
 
 function renderFilters() {
