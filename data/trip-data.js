@@ -92,7 +92,7 @@
       place: "Coldstream High Street",
       tags: ["Coldstream Guards", "band", "horses"],
       narrative:
-        "We watch them first in Coldstream, where the day belongs to the town: the band, the Guards, the horses, and the sound of hooves coming along the High Street from the west before turning towards the bridge and England beyond."
+        "We watch them first in Coldstream, where the day belongs to the town: the band, the Guards, the horses, and the sound of hooves coming along the High Street from the west before turning towards the bridge and England beyond. This year carries an extra piece of history too: the Household Cavalry accompanied the Coldstream Guards at the Flodden ride-out for the first time ever, and possibly the only time."
     },
     {
       chapter: "Thursday",
@@ -635,7 +635,7 @@
       quickNotes:
         "Sharon arranged with Ellis that Ellis would take Murray out for a lovely meal at Charlie's within the Roxburghe Hotel, Heiton, as an early birthday present from Sharon and Mike.",
       narrative:
-        "With Murray's birthday approaching, Sharon arranged with Ellis that Ellis would take him out for a lovely meal at Charlie's within the Roxburghe Hotel, Heiton. Sharon and Mike paid for the evening as an early birthday present from them, and it was just the two of them: Ellis and Murray having a night of their own within the wider family trip. Ellis had white wine poached mussels to start, Murray had gochujang-glazed pork belly, and then they shared chateaubriand with truffle Parmesan fries, peppercorn sauce, and spinach. They came back very happy with the evening, both saying the food was amazing.",
+        "With Murray's birthday approaching, Sharon arranged with Ellis that Ellis would take him out for a lovely meal at Charlie's within the Roxburghe Hotel, Heiton. Sharon and Mike paid for the evening as an early birthday present from them, and it was just the two of them: Ellis and Murray having a night of their own within the wider family trip. Ellis had white wine poached mussels to start, Murray had gochujang-glazed pork belly, and then they had a sharing chateaubriand with truffle Parmesan fries, peppercorn sauce, and spinach. They came back very happy with the evening, both saying the food was amazing.",
       media: [
         {
           type: "photo",
@@ -665,7 +665,7 @@
         {
           type: "photo",
           src: "assets/photos/tuesday/charlies/main-at-charlies.jpeg",
-          caption: "The shared chateaubriand main with truffle Parmesan fries, peppercorn sauce, and spinach."
+          caption: "The sharing chateaubriand main with truffle Parmesan fries, peppercorn sauce, and spinach."
         },
         {
           type: "photo",
@@ -738,7 +738,23 @@
         "Lunch at The Cobbles in Kelso: Ellis had risotto, Murray had a loaded burger, Sharon had risotto, Mike had fish and chips, and Patrick was lucky enough to have some of Murray's burger.",
       narrative:
         "After the morning at The Lennel, lunch at The Cobbles in Kelso gave the day a warmer middle. Ellis and Sharon both had risotto, Murray had a loaded burger, Mike had fish and chips, and Patrick once again found himself in the right place at the right time, lucky enough to share a little of Murray's burger.",
-      media: []
+      media: [
+        {
+          type: "photo",
+          src: "assets/photos/wednesday/cobbles/cobbles-food-1.jpeg",
+          caption: "Risotto at The Cobbles, chosen by both Ellis and Sharon."
+        },
+        {
+          type: "photo",
+          src: "assets/photos/wednesday/cobbles/cobbles-food-2.jpeg",
+          caption: "Murray's loaded burger at The Cobbles, with Patrick watching hopefully from the far side of the table."
+        },
+        {
+          type: "photo",
+          src: "assets/photos/wednesday/cobbles/cobbles-food-3.jpeg",
+          caption: "Mike's fish and chips at The Cobbles."
+        }
+      ]
     },
     {
       date: "Wednesday 5 August 2026",
@@ -821,38 +837,19 @@
       people: ["Mike", "Sharon", "Ellis", "Murray", "Patrick"],
       tags: ["activity", "event", "Coldstream Guards", "band", "horses"],
       quickNotes:
-        "Watch the band, Coldstream Guards, and riders pass from the west through Coldstream High Street.",
+        "Watch the band, Coldstream Guards, Household Cavalry, and riders pass from the west through Coldstream High Street.",
       narrative:
-        "We watched them first in Coldstream, where the day belonged to the town: the band, the Guards, the horses, the standards, and the sound of hooves coming along the High Street from the west before turning towards the bridge and England beyond.",
+        "We watched them first in Coldstream, where the day belonged to the town: the band, the Guards, the horses, the standards, and the sound of hooves coming along the High Street from the west before turning towards the bridge and England beyond. The Household Cavalry accompanied the Coldstream Guards at the Flodden ride-out, apparently the first time it had ever happened and possibly never to be repeated, giving the morning the feel of something genuinely unrepeatable.",
       media: [
         {
           type: "video",
-          src: "assets/videos/coldstream-high-street-band.mp4",
-          caption: "Band and Guards in Coldstream High Street."
+          src: "assets/videos/thursday/flodden/pipe-band-guards-household-cavalry-coldstream.mp4",
+          caption: "The Flodden ride-out in Coldstream: pipe band, Coldstream Guards, and Household Cavalry."
         },
         {
           type: "video",
-          src: "assets/videos/guards-and-riders-coldstream.mp4",
-          caption: "The riders passing through town."
-        }
-      ]
-    },
-    {
-      date: "Thursday",
-      time: "Late morning",
-      place: "Coldstream Bridge",
-      title: "Over the Tweed",
-      people: ["Mike", "Sharon", "Ellis", "Murray", "Patrick"],
-      tags: ["activity", "route", "Tweed", "Flodden Ride"],
-      quickNotes:
-        "Riders head over the bridge into England before the Flodden sequence.",
-      narrative:
-        "The riders passed through town and headed over the bridge across the Tweed into England. Then our part of the day changed gear too, leaving the crowd behind and heading for the farm on the hill.",
-      media: [
-        {
-          type: "video",
-          src: "assets/videos/riders-crossing-bridge.mp4",
-          caption: "The riders crossing towards England."
+          src: "assets/videos/thursday/flodden/riders-through-coldstream-high-street.mp4",
+          caption: "The riders passing through Coldstream High Street."
         }
       ]
     },
@@ -870,8 +867,8 @@
       media: [
         {
           type: "photo",
-          src: "assets/photos/flodden-packed-lunches.jpg",
-          caption: "Packed lunches from Sandersons Bakery."
+          src: "assets/photos/thursday/flodden/sandersons-packed-lunch.jpeg",
+          caption: "Packed lunch from Sandersons Bakery for the Flodden ride-out."
         }
       ]
     },
@@ -889,38 +886,38 @@
       media: [
         {
           type: "video",
+          src: "assets/videos/thursday/flodden/branxton-calm-before-the-charge.mp4",
+          caption: "The tranquillity at Branxton: the Flodden Memorial, the hillside, and the crowds gathered before the charge."
+        },
+        {
+          type: "video",
           src: "assets/videos/branxton-hill-charge.mp4",
           caption: "The riders charging up Branxton Hill."
+        }
+      ]
+    },
+    {
+      date: "Thursday",
+      time: "After Branxton Hill",
+      place: "The Collingwood Arms, Cornhill-on-Tweed",
+      title: "A Drink at Cornhill",
+      people: ["Mike", "Sharon", "Ellis", "Murray", "Patrick"],
+      tags: ["activity", "event", "Cornhill-on-Tweed", "Collingwood Arms", "Household Cavalry"],
+      quickNotes:
+        "After Branxton Hill, we stopped for a drink at the Collingwood Arms. As we were leaving, the Household Cavalry were arriving in Cornhill to become part of the ride back into Coldstream.",
+      narrative:
+        "After the rush of Branxton Hill, the day loosened again with a drink at the Collingwood Arms in Cornhill-on-Tweed. Then, just as we were leaving, the next piece of history arrived almost casually: the Household Cavalry coming into Cornhill to become part of the ride back into Coldstream. It gave the afternoon a second ceremonial hinge, quieter than the charge but just as memorable because of how rare it was.",
+      media: [
+        {
+          type: "video",
+          src: "assets/videos/thursday/flodden/household-cavalry-arrive-cornhill.mp4",
+          caption: "The Household Cavalry arriving in Cornhill-on-Tweed before joining the ride back into Coldstream."
         }
       ]
     }
   ],
 
   mediaPlan: [
-    {
-      title: "Coldstream High Street Band",
-      type: "Video",
-      file: "assets/videos/coldstream-high-street-band.mp4",
-      note: "Band, Guards, and the town gathering before the riders pass."
-    },
-    {
-      title: "Coldstream Guards",
-      type: "Photo or video",
-      file: "assets/photos/coldstream-guards.jpg",
-      note: "A clear shot of the Guards during the Thursday ceremonies."
-    },
-    {
-      title: "Riders Through Town",
-      type: "Video",
-      file: "assets/videos/guards-and-riders-coldstream.mp4",
-      note: "Riders coming from the west along Coldstream High Street."
-    },
-    {
-      title: "Crossing the Tweed",
-      type: "Video",
-      file: "assets/videos/riders-crossing-bridge.mp4",
-      note: "The riders heading over the bridge into England."
-    },
     {
       title: "Branxton Hill Charge",
       type: "Video",
